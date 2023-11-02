@@ -3,7 +3,7 @@ import docx2txt
 import PyPDF2
 import pytesseract
 from nltk import sent_tokenize
-from gensim.summarization import summarize
+# from gensim.summarization import summarize
 
 # Función para resumir un documento de texto
 def summarize_text(text, num_sentences):

@@ -9,19 +9,29 @@ Este script utiliza **gensim** para generar resúmenes de mejor calidad y tambi�
 
 ## Instalación
 
-Clonamos el repositorio
+### Clonamos el repositorio
 ```bash
 git clone https://github.com/Yextep/Resu
 ```
-Accedemos a la carpeta
+### Accedemos a la carpeta
 ```bash
 cd Resu
 ```
-Instalamos requerimientos
+### Instalamos requerimientos
 ```bash
 pip install -r requeriments.txt
 ```
-Ejecutamos el Script
+Nota: si te marca error en `gensim==3.8.3` puedes omitir la versión solo borrado ``==3.8.3`` 
+
+### Iniciamos <code>punkt</code>
+```bash
+python3 init.py
+```
+### Ejecutamos el Script
 ```bash
 python3 resu.py
+```
+Nota: si el script te marca error al ejecutar puedes omitir la lina de codigo `02`
+```py
+from gensim.summarization import summarize
 ```
